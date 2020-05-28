@@ -1,16 +1,17 @@
-# weather
+# Weather application for android and ios phones
 
-A new Flutter project.
+This is a weather application written in dart language under flutter environment.
 
-## Getting Started
+This app displays the weather of the current location (based on IP). Also, the user can navigate to other locations using openstreetmap to view the weather of that respective location.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+There are two keys missing in the apis.dart which the developer needs to get from the respective websites in order to access the free apis.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+In the file lib/apis.dart, the developer has to edit two lines:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+static final String TOKEN = "XXXX"; The developer can get the api token from https://api.airvisual.com/v2"
+
+static final String IPGL_TOKEN = 'XXXXX'; The developer can get the api token from https://api.ipgeolocation.io
+
+
+This project is still under construction. The temperature line plot is current faked. The plan is to use so appropriate api to draw temperature data and display the temperature predictions of next few days.
